@@ -39,7 +39,7 @@ def lastToFirst(i, Transform):
     return bw_restore(i, Transform, key='pos')[i]
 
 
-with open('/home/reverend_casy/WPGMA_Malovichko/rosalind_ba9k.txt', 'r') as handle:
+with open(str(input()), 'r') as handle:
     handle = list(handle.readlines())
     Transform, i = handle[0].rstrip('\n'), int(handle[1].rstrip('\n'))
 
@@ -75,3 +75,4 @@ def bwmatchlist(LastColumn, Patterns):
 
     print(matchlist)
     return ' '.join(list(map(str, matchlist)))
+

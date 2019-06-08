@@ -3,7 +3,7 @@ import numpy as np
 from itertools import chain
 
 
-def dfs_paths(graph, start, goal, leaves)->list:
+def dfs_paths(graph: list, start: str, goal: str, leaves: list)->list:
     stack = [(start, [start])]
     while stack:
         (vertex, path) = stack.pop()
